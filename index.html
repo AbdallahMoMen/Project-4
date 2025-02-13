@@ -5,17 +5,300 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <!-- Linking Normalize Library -->
-    <link rel="stylesheet" href="./css/normalize.css" />
     <!-- Linking FontAwesome Icon Library -->
     <link rel="stylesheet" href="./css/all.min.css" />
-    <!-- Linking FrameWork Stylling File -->
+    <!-- Linking Normalize Library -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- Linking Framework Stylling File -->
     <link rel="stylesheet" href="./css/framework.css" />
     <!-- Linking Main CSS Stylling File -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- Linking Fonts Throught Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="sidebar"></div>
+    <div class="page d-flex">
+      <!-- Starting Of SideBar Markup -->
+
+      <aside class="side-bar bg-white p-20">
+        <div class="logo t-center f-bold p-relative">
+          <a href="#">MoMen</a>
+        </div>
+        <ul>
+          <li>
+            <a class="active d-flex align-center gap-10 p-10 t-cap rad-6" href="#"
+              ><i class="fa-solid fa-chart-column"></i><span>dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-flex align-center gap-10 p-10 t-cap rad-6"
+              ><i class="fa-solid fa-gear"></i><span>settings</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-flex align-center gap-10 p-10 t-cap rad-6"
+              ><i class="fa-regular fa-user"></i><span>profile</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-flex align-center gap-10 p-10 t-cap rad-6"
+              ><i class="fa-solid fa-diagram-project"></i><span>projects</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-flex align-center gap-10 p-10 t-cap rad-6"
+              ><i class="fa-solid fa-graduation-cap"></i><span>courses</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-flex align-center gap-10 p-10 t-cap rad-6"
+              ><i class="fa-regular fa-circle-user"></i><span>friends</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-flex align-center gap-10 p-10 t-cap rad-6"
+              ><i class="fa-regular fa-file"></i> <span>files</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="d-flex align-center gap-10 p-10 t-cap rad-6"
+              ><i class="fa-regular fa-credit-card"></i><span>plans</span></a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Ending Of SideBar Markup -->
+      <main>
+        <!-- Starting Of Header Markup -->
+
+        <header class="between-flex align-center p-15 bg-white">
+          <div class="search p-relative p-10 rad-10">
+            <input type="text" class="tran-04" placeholder="Type A Keyword" />
+          </div>
+          <div class="icons d-flex align-center">
+            <i class="fa-regular fa-bell p-relative"></i>
+            <img class="rad-circle" src="./content/images/avatar.png" alt="" />
+          </div>
+        </header>
+
+        <!-- Ending Of Header Markup -->
+
+        <h2 class="t-cap p-relative w-fit">dashboard</h2>
+
+        <div class="content p-20 pb-0">
+          <div class="container d-grid gap-20">
+            <!-- Starting Of User Markup -->
+
+            <div class="user rad-10">
+              <div class="info between-flex p-20">
+                <div class="user-welcome">
+                  <h3 class="t-cap f-24 mb-10">welcome</h3>
+                  <span class="t-cap c-grey">moMen</span>
+                </div>
+                <img class="mob-hidden" src="./content/images/welcome.png" alt="" />
+              </div>
+              <div class="user-info p-relative bg-white">
+                <img class="p-absolute rad-circle" src="./content/images/avatar.png" alt="" />
+                <div class="user-data around-flex p-20 t-center t-cap f-18 mob-block">
+                  <div class="mb-20">
+                    abdallah momen
+                    <span class="d-block mb-10 c-grey f-14">developer</span>
+                  </div>
+                  <div class="mb-20">
+                    80
+                    <span class="d-block mb-10 c-grey f-14">projects</span>
+                  </div>
+                  <div class="mb-20">
+                    $8500
+                    <span class="d-block mb-10 c-grey f-14">earned</span>
+                  </div>
+                </div>
+                <a href="#" class="t-cap f-14 bg-blue btn-shape c-white tran-04">profile</a>
+              </div>
+            </div>
+
+            <!-- Ending Of User Markup -->
+
+            <!-- Starting Of Draft Markup -->
+
+            <div class="draft rad-6 p-20 bg-white">
+              <h3 class="t-cap f-24 mb-10">quick draft</h3>
+              <span class="d-block t-cap c-grey f-14 mb-10">write a draft for your ideas</span>
+              <form action="" class="mb-20">
+                <input
+                  type="text"
+                  placeholder="Title"
+                  class="d-block mb-10 p-10 b-none w-full bg-dark rad-10"
+                />
+                <textarea
+                  placeholder="Your Thought"
+                  class="-block mb-10 p-10 b-none w-full bg-dark rad-10"
+                ></textarea>
+                <input
+                  type="submit"
+                  value="Save"
+                  class="d b-none btn-shape bg-blue c-white f-14 tran-04"
+                />
+              </form>
+            </div>
+
+            <!-- Ending Of Draft Markup -->
+
+            <!-- Starting Of Target Markup -->
+
+            <div class="target p-20 rad-6 bg-white">
+              <h3 class="t-cap f-24 mb-10">yearly target</h3>
+              <span class="d-block t-cap c-grey f-14 mb-10">tagets of the year</span>
+              <div class="details blue center-flex mb-20">
+                <div class="icon blue center-flex bg-blue c-blue">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <div class="info">
+                  <p class="t-cap c-grey mb-10">money</p>
+                  <span class="num d-block f-bold mb-10">$20.000</span>
+                  <div class="blue bg-blue">
+                    <span class="target-row d-block p-relative">
+                      <span class="percent p-absolute bg-blue rad-6 c-white f-14">80%</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="details orange center-flex mb-20">
+                <div class="icon orange center-flex bg-orange c-orange">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="info">
+                  <p class="t-cap c-grey mb-10">projects</p>
+                  <span class="num d-block f-bold mb-10">24</span>
+                  <div class="orange bg-orange">
+                    <span class="target-row d-block p-relative">
+                      <span class="percent p-absolute bg-blue rad-6 c-white f-14">55%</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="details green center-flex mb-20">
+                <div class="icon green center-flex bg-green c-green">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="info">
+                  <p class="t-cap c-grey mb-10">team</p>
+                  <span class="num d-block f-bold mb-10">12</span>
+                  <div class="green bg-green">
+                    <span class="target-row d-block p-relative">
+                      <span class="percent p-absolute bg-blue rad-6 c-white f-14">75%</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ending Of Target Markup -->
+
+            <!-- Starting Of Tickets Markup -->
+
+            <div class="tickets rad-6 bg-white p-20">
+              <h3 class="t-cap f-24 mb-10">tickets statistics</h3>
+              <span class="d-block t-cap c-grey f-14 mb-10">everything about support tickets</span>
+              <div class="content d-flex f-wrap gap-20 t-center">
+                <div class="box rad-6 d-grid gap-20 p-20 f-25 f-bold">
+                  <i class="fa-regular fa-rectangle-list c-orange f-24"></i>
+                  2500
+                  <span class="f-14 c-grey t-cap">total</span>
+                </div>
+                <div class="box rad-6 d-grid gap-20 p-20 t-center f-25 f-bold">
+                  <i class="fa-solid fa-spinner c-blue f-24"></i>
+                  500
+                  <span class="f-14 c-grey t-cap">pending</span>
+                </div>
+                <div class="box rad-6 d-grid gap-20 p-20 t-center f-25 f-bold">
+                  <i class="fa-regular fa-circle-check c-green f-24"></i>
+                  1900
+                  <span class="f-14 c-grey t-cap">closed</span>
+                </div>
+                <div class="box rad-6 d-grid gap-20 p-20 t-center f-25 f-bold">
+                  <i class="fa-regular fa-rectangle-xmark c-red f-24"></i>
+                  100
+                  <span class="f-14 c-grey t-cap">deleted</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ending Of Tickets Markup -->
+
+            <!-- Starting Of News Markup -->
+
+            <div class="news bg-white rad-6 p-20">
+              <h3 class="t-cap f-24 mb-10">tickets statistics</h3>
+              <span class="d-block t-cap c-grey f-14 mb-10">everything about support tickets</span>
+              <div class="content">
+                <div class="center-flex gap-20 pb-10">
+                  <img class="rad-10" src="./content/images/news-01.png" alt="" />
+                  <div class="info between-flex align-center">
+                    <div class="text">
+                      <h3 class="t-cap mb-10 f-18">created SASS section</h3>
+                      <span class="d-block c-grey mb-10 f-14 t-cap"
+                        >new SASS examples & tutorials</span
+                      >
+                    </div>
+                    <span class="days t-cap p-5 f-14 bg-dark rad-6"> 3 days ago </span>
+                  </div>
+                </div>
+                <div class="center-flex gap-20 pb-10">
+                  <img class="rad-10" src="./content/images/news-02.png" alt="" />
+                  <div class="info between-flex align-center">
+                    <div class="text">
+                      <h3 class="t-cap mb-10 f-18">created SASS section</h3>
+                      <span class="d-block c-grey mb-10 f-14 t-cap"
+                        >a brand new website design</span
+                      >
+                    </div>
+                    <span class="days t-cap p-5 f-14 bg-dark rad-6"> 5 days ago </span>
+                  </div>
+                </div>
+                <div class="center-flex gap-20 pb-10">
+                  <img class="rad-10" src="./content/images/news-03.png" alt="" />
+                  <div class="info between-flex align-center">
+                    <div class="text">
+                      <h3 class="t-cap mb-10 f-18">created SASS section</h3>
+                      <span class="d-block c-grey mb-10 f-14 t-cap"
+                        >3 developers joined the team</span
+                      >
+                    </div>
+                    <span class="days t-cap p-5 f-14 bg-dark rad-6"> 7 days ago </span>
+                  </div>
+                </div>
+                <div class="center-flex gap-20 pb-10">
+                  <img class="rad-10" src="./content/images/news-04.png" alt="" />
+                  <div class="info between-flex align-center">
+                    <div class="text">
+                      <h3 class="t-cap mb-10 f-18">created SASS section</h3>
+                      <span class="d-block c-grey mb-10 f-14 t-cap"
+                        >many new payment gateways added</span
+                      >
+                    </div>
+                    <span class="days t-cap p-5 f-14 bg-dark rad-6"> 9 days ago </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ending Of News Markup -->
+
+            <!-- Starting Of Tasks Markup -->
+
+            <div class="tasks bg-white rad-6 p-20"></div>
+
+            <!-- Ending Of Tasks Markup -->
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
