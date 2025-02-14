@@ -25,6 +25,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #f1f5f9;
+  font-weight: 500;
 }
 
 ul {
@@ -57,6 +58,22 @@ textarea:focus {
   outline: none;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue-alt-color);
+}
+
 /* Ending Of Global Rules */
 
 .page {
@@ -66,6 +83,7 @@ textarea:focus {
 /* Starting Of SideBar Stylling */
 
 aside {
+  position: fixed;
   width: 250px;
   min-height: 100vh;
   box-shadow: 2px 0 10px rgb(0, 0, 0, 10%);
@@ -112,7 +130,8 @@ aside ul li > a {
 }
 
 
-aside ul li > a.active {
+aside ul li > a.active,
+aside ul li > a:hover {
   background-color: #F6F6F6;
 }
 
@@ -135,19 +154,25 @@ aside ul li > a.active {
   aside ul li > a > span {
     display: none;
   }
+
+  main {
+    padding-inline-start: 58px;
+  }
 }
 
 /* Ending Of SideBar Stylling */
 
-/* Starting Of Main page Stylling */
-
 main {
-  width: 100%
+  padding-inline-start: 250px;
 }
 
-/* Ending Of Main page Stylling */
-
 /* Starting Of Header Stylling */
+
+@media (max-width: 767px) {
+  main {
+    padding-inline-start: 58px;
+  }
+}
 
 header .search {
   border: 1px solid var(--grey-color)
@@ -193,9 +218,6 @@ header .search input:focus::placeholder {
 }
 
 @media (max-width: 767px) {
-  .page header {
-    padding: 10px;
-  }
 
   header .search input {
     width: 120px;
@@ -228,14 +250,6 @@ header .icons img {
 }
 
 /* Ending Of Header Stylling */
-
-@media (min-width: 1200px) {
-  main .content .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-}
 
 main > h2 {
   font-size: 32px;
@@ -455,3 +469,278 @@ h2::after {
 }
 
 /* Ending Of News Stylling */
+
+/* Starting Of Tasks Stylling */
+
+.tasks .content > div:not(:last-child) {
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.tasks .content .deleted {
+  opacity: 0.6;
+}
+
+.tasks .content .deleted .info {
+  text-decoration: line-through;
+}
+
+/* Ending Of Tasks Stylling */
+
+/* Starting Of Upload Stylling */
+
+.upload > div img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Ending Of Upload Stylling */
+
+/* Starting Of Progress Stylling */
+
+.progress > img {
+  width: 150px;
+  height: 150pxpx;
+  opacity: 0.2;
+  right: 0;
+  bottom: 0;
+}
+
+.progress > div > .circle {
+  min-width: 25px;
+  min-height: 25px;
+  border: 2px solid #FFF;
+  outline: 2px solid var(--blue-color);
+}
+
+.progress > div > .circle.blink {
+  animation: blink-blue 2s linear infinite;
+  -webkit-animation: blink-blue 2s linear infinite;
+}
+
+.progress > div:not(:last-child) > .circle::after {
+  content: "";
+  width: 2px;
+  height: 22px;
+  background-color: var(--blue-color);
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+/* Ending Of Progress Stylling */
+
+/* Starting Of Reminder Stylling */
+
+.reminder > ul > li::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.reminder > ul > li {
+  margin-inline-start: 30px;
+  border-inline-start: 2px solid var(--blue-color);
+}
+
+.reminder > ul > li.green {
+  border-inline-start: 2px solid var(--green-color);
+}
+
+.reminder > ul > li.orange {
+  border-inline-start: 2px solid var(--orange-color);
+}
+
+.reminder > ul > li.red {
+  border-inline-start: 2px solid var(--red-color);
+}
+
+.reminder > ul > li.green::before {
+  background-color: var(--green-color);
+}
+
+.reminder > ul > li.orange::before {
+  background-color: var(--orange-color);
+}
+
+.reminder > ul > li.red::before {
+  background-color: var(--red-color);
+}
+
+/* Ending Of Reminder Stylling */
+
+/* Starting Of Post Stylling */
+
+.post img {
+  width: 50px;
+  height: 50px;
+}
+
+.post > p {
+  line-height: 1.5;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .post > p {
+    text-align: center;
+  }
+}
+
+/* Ending Of Post Stylling */
+
+/* Starting Of Social Media Stylling */
+
+.social-media > div {
+  padding-inline-start: 50px;
+}
+
+.social-media > div.twitter {
+  background-color: #d2ecfc;
+}
+
+.social-media > div.facebook {
+  background-color: #D1E4FC;
+}
+
+.social-media > div.youtube {
+  background-color: #ffcccc;
+}
+
+.social-media > div.linked {
+  background-color: #CCE4F0;
+}
+
+
+.social-media > div .icon {
+  width: 50px;
+  height: 100%;
+  background-color: #1da1f2;
+  left: 0;
+}
+
+.social-media > div .icon > i {
+  font-size: 30px;
+}
+
+.social-media > div.facebook .icon {
+  background-color: #1877f2;
+}
+
+.social-media > div.youtube .icon {
+  background-color: #ff0000;
+}
+
+.social-media > div.linked .icon {
+  background-color: #0077b5;
+}
+
+.social-media > div.twitter .info {
+  color: #1da1f2;
+}
+
+.social-media > div.facebook .info {
+  color: #1877f2;
+}
+
+.social-media > div.youtube .info {
+  color: #ff0000;
+}
+
+.social-media > div.linked .info {
+  color: #0077b5;
+}
+
+.social-media > div.twitter a {
+  background-color: #1da1f2;
+}
+
+.social-media > div.facebook a {
+  background-color: #1877f2;
+}
+
+.social-media > div.youtube a {
+  background-color: #ff0000;
+}
+
+.social-media > div.linked a {
+  background-color: #0077B5;
+}
+
+/* Ending Of Social Media Stylling */
+
+/* Starting Of Projects Stylling */
+
+.projects .resp-table {
+  overflow-x: auto;
+}
+
+.resp-table > table {
+  min-width: 1000px;
+  border-spacing: 0;
+}
+
+.resp-table > table thead th {
+  text-align: start;
+}
+
+.resp-table > table tr td {
+  border-left: 1px solid var(--dark-color);
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.resp-table > table tr td:last-child {
+  border-right: 1px solid var(--dark-color);
+}
+
+.resp-table > table tr:hover {
+  background-color: #faf7f7;
+}
+
+.resp-table > table tr td span {
+  float: unset;
+}
+
+.resp-table > table img {
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  background-color: #FFF;
+}
+
+.resp-table > table img:not(:first-child) {
+  margin-inline-start: -20px;
+}
+
+
+/* Ending Of Projects Stylling */
+
+
+
+@keyframes blink-blue {
+  30% {
+    background-color: #FFF;
+  }
+
+  70% {
+    background-color: var(--blue-color);
+  }
+}

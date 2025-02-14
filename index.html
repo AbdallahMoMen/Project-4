@@ -74,10 +74,11 @@
       </aside>
 
       <!-- Ending Of SideBar Markup -->
-      <main>
+
+      <main class="w-full">
         <!-- Starting Of Header Markup -->
 
-        <header class="between-flex align-center p-15 bg-white">
+        <header class="between-flex align-center p-15 bg-white w-full">
           <div class="search p-relative p-10 rad-10">
             <input type="text" class="tran-04" placeholder="Type A Keyword" />
           </div>
@@ -88,216 +89,575 @@
         </header>
 
         <!-- Ending Of Header Markup -->
-
         <h2 class="t-cap p-relative w-fit">dashboard</h2>
 
-        <div class="content p-20 pb-0">
-          <div class="container d-grid gap-20">
-            <!-- Starting Of User Markup -->
+        <div class="wrapper gap-20 m-20">
+          <!-- Starting Of User Markup -->
 
-            <div class="user rad-10">
-              <div class="info between-flex p-20">
-                <div class="user-welcome">
-                  <h3 class="t-cap f-24 mb-10">welcome</h3>
-                  <span class="t-cap c-grey">moMen</span>
-                </div>
-                <img class="mob-hidden" src="./content/images/welcome.png" alt="" />
+          <div class="user rad-10">
+            <div class="info between-flex p-20">
+              <div class="user-welcome">
+                <h3 class="t-cap f-24 mb-10">welcome</h3>
+                <span class="t-cap c-grey">moMen</span>
               </div>
-              <div class="user-info p-relative bg-white">
-                <img class="p-absolute rad-circle" src="./content/images/avatar.png" alt="" />
-                <div class="user-data around-flex p-20 t-center t-cap f-18 mob-block">
-                  <div class="mb-20">
-                    abdallah momen
-                    <span class="d-block mb-10 c-grey f-14">developer</span>
-                  </div>
-                  <div class="mb-20">
-                    80
-                    <span class="d-block mb-10 c-grey f-14">projects</span>
-                  </div>
-                  <div class="mb-20">
-                    $8500
-                    <span class="d-block mb-10 c-grey f-14">earned</span>
-                  </div>
+              <img class="mob-hidden" src="./content/images/welcome.png" alt="" />
+            </div>
+            <div class="user-info p-relative bg-white">
+              <img class="p-absolute rad-circle" src="./content/images/avatar.png" alt="" />
+              <div class="user-data around-flex p-20 t-center t-cap f-18 mob-block">
+                <div class="mb-20">
+                  abdallah momen
+                  <span class="d-block mb-10 c-grey f-14">developer</span>
                 </div>
-                <a href="#" class="t-cap f-14 bg-blue btn-shape c-white tran-04">profile</a>
+                <div class="mb-20">
+                  80
+                  <span class="d-block mb-10 c-grey f-14">projects</span>
+                </div>
+                <div class="mb-20">
+                  $8500
+                  <span class="d-block mb-10 c-grey f-14">earned</span>
+                </div>
+              </div>
+              <a href="#" class="t-cap f-14 bg-blue btn-shape c-white tran-04">profile</a>
+            </div>
+          </div>
+
+          <!-- Ending Of User Markup -->
+
+          <!-- Starting Of Draft Markup -->
+
+          <div class="draft rad-6 p-20 bg-white">
+            <h3 class="t-cap f-24 mb-10">quick draft</h3>
+            <span class="d-block t-cap c-grey f-14 mb-10">write a draft for your ideas</span>
+            <form action="" class="mb-20">
+              <input
+                type="text"
+                placeholder="Title"
+                class="d-block mb-10 p-10 b-none w-full bg-dark rad-10"
+              />
+              <textarea
+                placeholder="Your Thought"
+                class="-block mb-10 p-10 b-none w-full bg-dark rad-10"
+              ></textarea>
+              <input
+                type="submit"
+                value="Save"
+                class="d b-none btn-shape bg-blue c-white f-14 tran-04"
+              />
+            </form>
+          </div>
+
+          <!-- Ending Of Draft Markup -->
+
+          <!-- Starting Of Target Markup -->
+
+          <div class="target p-20 rad-6 bg-white">
+            <h3 class="t-cap f-24 mb-10">yearly target</h3>
+            <span class="d-block t-cap c-grey f-14 mb-10">tagets of the year</span>
+            <div class="details blue center-flex mb-20">
+              <div class="icon blue center-flex bg-blue c-blue">
+                <i class="fa-solid fa-dollar-sign"></i>
+              </div>
+              <div class="info">
+                <p class="t-cap c-grey mb-10">money</p>
+                <span class="num d-block f-bold mb-10">$20.000</span>
+                <div class="blue bg-blue">
+                  <span class="target-row d-block p-relative">
+                    <span class="percent p-absolute bg-blue rad-6 c-white f-14">80%</span>
+                  </span>
+                </div>
               </div>
             </div>
-
-            <!-- Ending Of User Markup -->
-
-            <!-- Starting Of Draft Markup -->
-
-            <div class="draft rad-6 p-20 bg-white">
-              <h3 class="t-cap f-24 mb-10">quick draft</h3>
-              <span class="d-block t-cap c-grey f-14 mb-10">write a draft for your ideas</span>
-              <form action="" class="mb-20">
-                <input
-                  type="text"
-                  placeholder="Title"
-                  class="d-block mb-10 p-10 b-none w-full bg-dark rad-10"
-                />
-                <textarea
-                  placeholder="Your Thought"
-                  class="-block mb-10 p-10 b-none w-full bg-dark rad-10"
-                ></textarea>
-                <input
-                  type="submit"
-                  value="Save"
-                  class="d b-none btn-shape bg-blue c-white f-14 tran-04"
-                />
-              </form>
-            </div>
-
-            <!-- Ending Of Draft Markup -->
-
-            <!-- Starting Of Target Markup -->
-
-            <div class="target p-20 rad-6 bg-white">
-              <h3 class="t-cap f-24 mb-10">yearly target</h3>
-              <span class="d-block t-cap c-grey f-14 mb-10">tagets of the year</span>
-              <div class="details blue center-flex mb-20">
-                <div class="icon blue center-flex bg-blue c-blue">
-                  <i class="fa-solid fa-dollar-sign"></i>
+            <div class="details orange center-flex mb-20">
+              <div class="icon orange center-flex bg-orange c-orange">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="info">
+                <p class="t-cap c-grey mb-10">projects</p>
+                <span class="num d-block f-bold mb-10">24</span>
+                <div class="orange bg-orange">
+                  <span class="target-row d-block p-relative">
+                    <span class="percent p-absolute bg-blue rad-6 c-white f-14">55%</span>
+                  </span>
                 </div>
+              </div>
+            </div>
+            <div class="details green center-flex mb-20">
+              <div class="icon green center-flex bg-green c-green">
+                <i class="fa-regular fa-user"></i>
+              </div>
+              <div class="info">
+                <p class="t-cap c-grey mb-10">team</p>
+                <span class="num d-block f-bold mb-10">12</span>
+                <div class="green bg-green">
+                  <span class="target-row d-block p-relative">
+                    <span class="percent p-absolute bg-blue rad-6 c-white f-14">75%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ending Of Target Markup -->
+
+          <!-- Starting Of Tickets Markup -->
+
+          <div class="tickets rad-6 bg-white p-20">
+            <h3 class="t-cap f-24 mb-10">tickets statistics</h3>
+            <span class="d-block t-cap c-grey f-14 mb-10">everything about support tickets</span>
+            <div class="content d-flex f-wrap gap-20 t-center">
+              <div class="box rad-6 d-grid gap-20 p-20 f-25 f-bold">
+                <i class="fa-regular fa-rectangle-list c-orange f-24"></i>
+                2500
+                <span class="f-14 c-grey t-cap">total</span>
+              </div>
+              <div class="box rad-6 d-grid gap-20 p-20 t-center f-25 f-bold">
+                <i class="fa-solid fa-spinner c-blue f-24"></i>
+                500
+                <span class="f-14 c-grey t-cap">pending</span>
+              </div>
+              <div class="box rad-6 d-grid gap-20 p-20 t-center f-25 f-bold">
+                <i class="fa-regular fa-circle-check c-green f-24"></i>
+                1900
+                <span class="f-14 c-grey t-cap">closed</span>
+              </div>
+              <div class="box rad-6 d-grid gap-20 p-20 t-center f-25 f-bold">
+                <i class="fa-regular fa-rectangle-xmark c-red f-24"></i>
+                100
+                <span class="f-14 c-grey t-cap">deleted</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ending Of Tickets Markup -->
+
+          <!-- Starting Of News Markup -->
+
+          <div class="news bg-white rad-6 p-20">
+            <h3 class="t-cap f-24 mb-10">tickets statistics</h3>
+            <span class="d-block t-cap c-grey f-14 mb-10">everything about support tickets</span>
+            <div class="content">
+              <div class="center-flex gap-20 pb-10">
+                <img class="rad-10" src="./content/images/news-01.png" alt="" />
+                <div class="info between-flex align-center">
+                  <div class="text">
+                    <h3 class="t-cap mb-10 f-18">created SASS section</h3>
+                    <span class="d-block c-grey mb-10 f-14 t-cap"
+                      >new SASS examples & tutorials</span
+                    >
+                  </div>
+                  <span class="days t-cap p-5 f-14 bg-dark rad-6"> 3 days ago </span>
+                </div>
+              </div>
+              <div class="center-flex gap-20 pb-10">
+                <img class="rad-10" src="./content/images/news-02.png" alt="" />
+                <div class="info between-flex align-center">
+                  <div class="text">
+                    <h3 class="t-cap mb-10 f-18">created SASS section</h3>
+                    <span class="d-block c-grey mb-10 f-14 t-cap">a brand new website design</span>
+                  </div>
+                  <span class="days t-cap p-5 f-14 bg-dark rad-6"> 5 days ago </span>
+                </div>
+              </div>
+              <div class="center-flex gap-20 pb-10">
+                <img class="rad-10" src="./content/images/news-03.png" alt="" />
+                <div class="info between-flex align-center">
+                  <div class="text">
+                    <h3 class="t-cap mb-10 f-18">created SASS section</h3>
+                    <span class="d-block c-grey mb-10 f-14 t-cap"
+                      >3 developers joined the team</span
+                    >
+                  </div>
+                  <span class="days t-cap p-5 f-14 bg-dark rad-6"> 7 days ago </span>
+                </div>
+              </div>
+              <div class="center-flex gap-20 pb-10">
+                <img class="rad-10" src="./content/images/news-04.png" alt="" />
+                <div class="info between-flex align-center">
+                  <div class="text">
+                    <h3 class="t-cap mb-10 f-18">created SASS section</h3>
+                    <span class="d-block c-grey mb-10 f-14 t-cap"
+                      >many new payment gateways added</span
+                    >
+                  </div>
+                  <span class="days t-cap p-5 f-14 bg-dark rad-6"> 9 days ago </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ending Of News Markup -->
+
+          <!-- Starting Of Tasks Markup -->
+
+          <div class="tasks bg-white rad-6 p-20">
+            <h3 class="t-cap f-24 mb-10">tickets statistics</h3>
+            <div class="content">
+              <div class="between-flex align-center mbot-10 pbot-15">
                 <div class="info">
-                  <p class="t-cap c-grey mb-10">money</p>
-                  <span class="num d-block f-bold mb-10">$20.000</span>
-                  <div class="blue bg-blue">
-                    <span class="target-row d-block p-relative">
-                      <span class="percent p-absolute bg-blue rad-6 c-white f-14">80%</span>
-                    </span>
-                  </div>
+                  <p class="t-cap f-bold mb-10">write article</p>
+                  <span class="c-grey f-14 t-cap">write low level vs hight level language</span>
                 </div>
+                <i class="fa-regular fa-trash-can f-18"></i>
               </div>
-              <div class="details orange center-flex mb-20">
-                <div class="icon orange center-flex bg-orange c-orange">
-                  <i class="fa-solid fa-code"></i>
-                </div>
+              <div class="between-flex align-center mbot-10 pbot-15">
                 <div class="info">
-                  <p class="t-cap c-grey mb-10">projects</p>
-                  <span class="num d-block f-bold mb-10">24</span>
-                  <div class="orange bg-orange">
-                    <span class="target-row d-block p-relative">
-                      <span class="percent p-absolute bg-blue rad-6 c-white f-14">55%</span>
-                    </span>
-                  </div>
+                  <p class="t-cap f-bold mb-10">finish project</p>
+                  <span class="c-grey f-14 t-cap">publish academy programming project</span>
                 </div>
+                <i class="fa-regular fa-trash-can f-18"></i>
               </div>
-              <div class="details green center-flex mb-20">
-                <div class="icon green center-flex bg-green c-green">
-                  <i class="fa-regular fa-user"></i>
-                </div>
+              <div class="deleted between-flex align-center mbot-10 pbot-15">
                 <div class="info">
-                  <p class="t-cap c-grey mb-10">team</p>
-                  <span class="num d-block f-bold mb-10">12</span>
-                  <div class="green bg-green">
-                    <span class="target-row d-block p-relative">
-                      <span class="percent p-absolute bg-blue rad-6 c-white f-14">75%</span>
-                    </span>
-                  </div>
+                  <p class="t-cap f-bold mb-10">attend the metting</p>
+                  <span class="c-grey f-14 t-cap">attend the project business analysis</span>
                 </div>
+                <i class="fa-regular fa-trash-can f-18"></i>
+              </div>
+              <div class="between-flex align-center">
+                <div class="info">
+                  <p class="t-cap f-bold mb-10">finish lesson</p>
+                  <span class="c-grey f-14 t-cap">finish teaching flex box</span>
+                </div>
+                <i class="fa-regular fa-trash-can f-18"></i>
               </div>
             </div>
+          </div>
 
-            <!-- Ending Of Target Markup -->
+          <!-- Ending Of Tasks Markup -->
 
-            <!-- Starting Of Tickets Markup -->
+          <!-- Starting Of Search Markup -->
 
-            <div class="tickets rad-6 bg-white p-20">
-              <h3 class="t-cap f-24 mb-10">tickets statistics</h3>
-              <span class="d-block t-cap c-grey f-14 mb-10">everything about support tickets</span>
-              <div class="content d-flex f-wrap gap-20 t-center">
-                <div class="box rad-6 d-grid gap-20 p-20 f-25 f-bold">
-                  <i class="fa-regular fa-rectangle-list c-orange f-24"></i>
-                  2500
-                  <span class="f-14 c-grey t-cap">total</span>
+          <div class="search bg-white rad-6 p-20">
+            <h3 class="t-cap f-24 mbot-20">top search items</h3>
+            <div class="c-grey between-flex f-18 t-cap mbot-10">
+              <span class="c-grey">keyword</span>
+              <span class="c-grey">search count</span>
+            </div>
+            <div class="between-flex pb-20">
+              <span class="t-cap">programming</span>
+              <span class="bg-dark p-5 f-14 rad-6">220</span>
+            </div>
+            <div class="between-flex pb-20">
+              <span class="t-cap">javaScript</span>
+              <span class="bg-dark p-5 f-14 rad-6">180</span>
+            </div>
+            <div class="between-flex pb-20">
+              <span class="t-cap">pHP</span>
+              <span class="bg-dark p-5 f-14 rad-6">160</span>
+            </div>
+            <div class="between-flex pb-20">
+              <span class="t-cap">code</span>
+              <span class="bg-dark p-5 f-14 rad-6">145</span>
+            </div>
+            <div class="between-flex pb-20">
+              <span class="t-cap">design</span>
+              <span class="bg-dark p-5 f-14 rad-6">110</span>
+            </div>
+            <div class="between-flex pb-20">
+              <span class="t-cap">logic</span>
+              <span class="bg-dark p-5 f-14 rad-6">95</span>
+            </div>
+          </div>
+
+          <!-- Ending Of Search Markup -->
+
+          <!-- Starting Of Uploads Markup -->
+
+          <div class="upload bg-white rad-6 p-20">
+            <h3 class="t-cap f-24 mbot-20">Latest Uploads</h3>
+            <div class="center-flex pbot-5 mbot-10 b-bot">
+              <img src="./content/images/pdf.svg" alt="" class="mr-10" />
+              <div class="between-flex f-1">
+                <div class="info">
+                  <p class="m-0 mbot-5">My-File.pdf</p>
+                  <span class="c-grey t-cap f-14">moMen</span>
                 </div>
-                <div class="box rad-6 d-grid gap-20 p-20 t-center f-25 f-bold">
-                  <i class="fa-solid fa-spinner c-blue f-24"></i>
-                  500
-                  <span class="f-14 c-grey t-cap">pending</span>
-                </div>
-                <div class="box rad-6 d-grid gap-20 p-20 t-center f-25 f-bold">
-                  <i class="fa-regular fa-circle-check c-green f-24"></i>
-                  1900
-                  <span class="f-14 c-grey t-cap">closed</span>
-                </div>
-                <div class="box rad-6 d-grid gap-20 p-20 t-center f-25 f-bold">
-                  <i class="fa-regular fa-rectangle-xmark c-red f-24"></i>
-                  100
-                  <span class="f-14 c-grey t-cap">deleted</span>
-                </div>
+                <p class="bg-dark rad-6 pi-10 pb-5">2.9mb</p>
               </div>
             </div>
-
-            <!-- Ending Of Tickets Markup -->
-
-            <!-- Starting Of News Markup -->
-
-            <div class="news bg-white rad-6 p-20">
-              <h3 class="t-cap f-24 mb-10">tickets statistics</h3>
-              <span class="d-block t-cap c-grey f-14 mb-10">everything about support tickets</span>
-              <div class="content">
-                <div class="center-flex gap-20 pb-10">
-                  <img class="rad-10" src="./content/images/news-01.png" alt="" />
-                  <div class="info between-flex align-center">
-                    <div class="text">
-                      <h3 class="t-cap mb-10 f-18">created SASS section</h3>
-                      <span class="d-block c-grey mb-10 f-14 t-cap"
-                        >new SASS examples & tutorials</span
-                      >
-                    </div>
-                    <span class="days t-cap p-5 f-14 bg-dark rad-6"> 3 days ago </span>
-                  </div>
+            <div class="center-flex pbot-5 mbot-10 b-bot">
+              <img src="./content/images/avi.svg" alt="" class="mr-10" />
+              <div class="between-flex f-1">
+                <div class="info">
+                  <p class="m-0 mbot-5">My-File.avi</p>
+                  <span class="c-grey t-cap f-14">admin</span>
                 </div>
-                <div class="center-flex gap-20 pb-10">
-                  <img class="rad-10" src="./content/images/news-02.png" alt="" />
-                  <div class="info between-flex align-center">
-                    <div class="text">
-                      <h3 class="t-cap mb-10 f-18">created SASS section</h3>
-                      <span class="d-block c-grey mb-10 f-14 t-cap"
-                        >a brand new website design</span
-                      >
-                    </div>
-                    <span class="days t-cap p-5 f-14 bg-dark rad-6"> 5 days ago </span>
-                  </div>
-                </div>
-                <div class="center-flex gap-20 pb-10">
-                  <img class="rad-10" src="./content/images/news-03.png" alt="" />
-                  <div class="info between-flex align-center">
-                    <div class="text">
-                      <h3 class="t-cap mb-10 f-18">created SASS section</h3>
-                      <span class="d-block c-grey mb-10 f-14 t-cap"
-                        >3 developers joined the team</span
-                      >
-                    </div>
-                    <span class="days t-cap p-5 f-14 bg-dark rad-6"> 7 days ago </span>
-                  </div>
-                </div>
-                <div class="center-flex gap-20 pb-10">
-                  <img class="rad-10" src="./content/images/news-04.png" alt="" />
-                  <div class="info between-flex align-center">
-                    <div class="text">
-                      <h3 class="t-cap mb-10 f-18">created SASS section</h3>
-                      <span class="d-block c-grey mb-10 f-14 t-cap"
-                        >many new payment gateways added</span
-                      >
-                    </div>
-                    <span class="days t-cap p-5 f-14 bg-dark rad-6"> 9 days ago </span>
-                  </div>
-                </div>
+                <p class="bg-dark rad-6 pi-10 pb-5">4.9mb</p>
               </div>
             </div>
+            <div class="center-flex pbot-5 mbot-10 b-bot">
+              <img src="./content/images/psd.svg" alt="" class="mr-10" />
+              <div class="between-flex f-1">
+                <div class="info">
+                  <p class="m-0 mbot-5">My-File.psd</p>
+                  <span class="c-grey t-cap f-14">ahmed</span>
+                </div>
+                <p class="bg-dark rad-6 pi-10 pb-5">5.6mb</p>
+              </div>
+            </div>
+            <div class="center-flex pbot-5 mbot-10 b-bot">
+              <img src="./content/images/zip.svg" alt="" class="mr-10" />
+              <div class="between-flex f-1">
+                <div class="info">
+                  <p class="m-0 mbot-5">My-File.zip</p>
+                  <span class="c-grey t-cap f-14">user</span>
+                </div>
+                <p class="bg-dark rad-6 pi-10 pb-5">9.4mb</p>
+              </div>
+            </div>
+            <div class="center-flex pbot-5 mbot-10 b-bot">
+              <img src="./content/images/dll.svg" alt="" class="mr-10" />
+              <div class="between-flex f-1">
+                <div class="info">
+                  <p class="m-0 mbot-5">My-File.dll</p>
+                  <span class="c-grey t-cap f-14">admin</span>
+                </div>
+                <p class="bg-dark rad-6 pi-10 pb-5">4.9mb</p>
+              </div>
+            </div>
+            <div class="center-flex">
+              <img src="./content/images/eps.svg" alt="" class="mr-10" />
+              <div class="between-flex f-1">
+                <div class="info">
+                  <p class="m-0 mbot-5">My-File.eps</p>
+                  <span class="c-grey t-cap f-14">designer</span>
+                </div>
+                <p class="bg-dark rad-6 pi-10 pb-5">8.9mb</p>
+              </div>
+            </div>
+          </div>
+          <!-- Ending Of Uploads Markup -->
 
-            <!-- Ending Of News Markup -->
+          <!-- Starting Of Progress Markup -->
 
-            <!-- Starting Of Tasks Markup -->
+          <div class="progress bg-white rad-6 p-20 p-relative">
+            <h3 class="t-cap f-24 mbot-20">last project progress</h3>
+            <img src="./content/images/project.png" alt="" class="p-absolute mob-hidden" />
+            <div class="t-cap d-flex align-center gap-10 mbot-20">
+              <span class="circle d-block rad-circle bg-blue p-relative"></span>
+              got the project
+            </div>
+            <div class="t-cap d-flex align-center gap-10 pbot-20">
+              <span class="circle d-block rad-circle bg-blue p-relative"></span>
+              started the project
+            </div>
+            <div class="t-cap d-flex align-center gap-10 pbot-20">
+              <span class="circle d-block rad-circle bg-blue p-relative"></span>
+              the project about to finish
+            </div>
+            <div class="t-cap d-flex align-center gap-10 pbot-20">
+              <span class="circle blink d-block rad-circle bg-blue p-relative"></span>
+              test the project
+            </div>
+            <div class="t-cap d-flex align-center gap-10">
+              <span class="circle m-0 rad-circle bg-white p-relative"></span>
+              finish the project & get money
+            </div>
+          </div>
 
-            <div class="tasks bg-white rad-6 p-20"></div>
+          <!-- Ending Of Progress Markup -->
 
-            <!-- Ending Of Tasks Markup -->
+          <!-- Starting Of Reminder Markup -->
+
+          <div class="reminder bg-white rad-6 p-20">
+            <h3 class="t-cap f-24 mbot-20">last project progress</h3>
+            <ul>
+              <li class="blue pl-10 mb-10 p-relative">
+                <p class="mbot-10">Check My Tasks List</p>
+                <span class="c-grey f-14"> 28/09/2025 - 12:00am </span>
+              </li>
+              <li class="green pl-10 mb-10 p-relative">
+                <p class="mbot-10">Check My Projects</p>
+                <span class="c-grey f-14"> 26/10/2025 - 12:00am </span>
+              </li>
+              <li class="orange pl-10 mb-10 p-relative">
+                <p class="mbot-10">Call All My Clients</p>
+                <span class="c-grey f-14"> 05/11/2025 - 12:00am </span>
+              </li>
+              <li class="red pl-10 p-relative">
+                <p class="mbot-10">Finish The Development Workshop</p>
+                <span class="c-grey f-14"> 20/12/2025 - 12:00am </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Ending Of Reminder Markup -->
+
+          <!-- Starting Of Reminder Markup -->
+
+          <div class="post bg-white rad-6 p-20">
+            <h3 class="t-cap f-24 mbot-20">lastest post</h3>
+            <div class="d-flex align-center gap-20 pbot-20 b-bot">
+              <img src="./content/images/avatar.png" alt="" />
+              <div class="info">
+                <h3 class="t-cap m-0 mbot-10">abdallah moMen</h3>
+                <span class="c-grey t-cap">about 3 hours ago</span>
+              </div>
+            </div>
+            <p class="t-cap b-bot f-18">
+              You can fool all of the people some of the time, and some of the people all of the
+              time, but you can't fool all of the people all of the time.
+            </p>
+            <div class="icons between-flex ptop-10">
+              <div class="heart c-grey">
+                <i class="fa-regular fa-heart mr-5"></i>
+                1.8k
+              </div>
+              <div class="msg c-grey">
+                <i class="fa-regular fa-comments mr-5"></i>
+                500
+              </div>
+            </div>
+          </div>
+          <!-- Ending Of Reminder Markup -->
+
+          <!-- Starting Of Social Media Markup -->
+
+          <div class="social-media bg-white rad-6 p-20">
+            <h3 class="t-cap f-24 mbot-20">social media stats</h3>
+            <div class="twitter d-flex align-center mb-10 p-relative">
+              <div class="icon center-flex p-absolute">
+                <i class="fa-brands fa-twitter c-white"></i>
+              </div>
+              <div class="info between-flex f-1 f-wrap align-center ml-20 pb-15">
+                <span>90k Followers</span>
+                <a href="#" class="d-block btn-shape t-cap c-white f-14 bg-blue mr-10">follow</a>
+              </div>
+            </div>
+            <div class="facebook d-flex align-center mb-10 p-relative">
+              <div class="icon center-flex p-absolute">
+                <i class="fa-brands fa-facebook-f c-white"></i>
+              </div>
+              <div class="info between-flex f-1 f-wrap align-center ml-20 pb-15">
+                <span class="mr-10">2M Like</span>
+                <a href="#" class="d-block btn-shape t-cap c-white f-14 bg-blue mr-10">follow</a>
+              </div>
+            </div>
+            <div class="youtube d-flex align-center mb-10 p-relative">
+              <div class="icon center-flex p-absolute">
+                <i class="fa-brands fa-twitter c-white"></i>
+              </div>
+              <div class="info between-flex f-1 f-wrap align-center ml-20 pb-15">
+                <span>1M Subs</span>
+                <a href="#" class="d-block btn-shape t-cap c-white f-14 bg-blue mr-10">follow</a>
+              </div>
+            </div>
+            <div class="linked d-flex align-center p-relative">
+              <div class="icon center-flex p-absolute">
+                <i class="fa-brands fa-twitter c-white"></i>
+              </div>
+              <div class="info between-flex f-1 f-wrap align-center ml-20 pb-15">
+                <span>70k Followers</span>
+                <a href="#" class="d-block btn-shape t-cap c-white f-14 bg-blue mr-10">follow</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ending Of Social Media Markup -->
+        </div>
+        <!-- Starting Of Projects Markup -->
+        <div class="projects bg-white rad-6 m-20 p-20">
+          <h3 class="t-cap f-24 mbot-20">projects</h3>
+          <div class="resp-table">
+            <table class="w-full">
+              <thead class="bg-dark t-cap">
+                <th class="p-15">name</th>
+                <th class="p-15">finish data</th>
+                <th class="p-15">client</th>
+                <th class="p-15">price</th>
+                <th class="p-15">team</th>
+                <th class="p-15">status</th>
+              </thead>
+              <tbody>
+                <tr class="t-cap tran-04">
+                  <td class="p-15">Ministry Wikipedia</td>
+                  <td class="p-15">10 may 2022</td>
+                  <td class="p-15">ministry</td>
+                  <td class="p-15">$5300</td>
+                  <td class="d-flex align-center p-15">
+                    <img src="./content/images/team-01.png" alt="" class="rad-circle" />
+                    <img src="./content/images/team-02.png" alt="" class="rad-circle" />
+                    <img src="./content/images/team-03.png" alt="" class="rad-circle" />
+                    <img src="./content/images/team-04.png" alt="" class="rad-circle" />
+                  </td>
+                  <td class="p-15">
+                    <span class="t-cap btn-shape bg-orange c-white f-14">pending</span>
+                  </td>
+                </tr>
+                <tr class="t-cap tran-04">
+                  <td class="p-15">moMen shop</td>
+                  <td class="p-15">12 oct 2021</td>
+                  <td class="p-15">moMen company</td>
+                  <td class="p-15">$1500</td>
+                  <td class="d-flex align-center p-15">
+                    <img src="./content/images/team-01.png" alt="" class="rad-circle" />
+                    <img src="./content/images/team-02.png" alt="" class="rad-circle" />
+                    <img src="./content/images/team-03.png" alt="" class="rad-circle" />
+                  </td>
+                  <td class="p-15">
+                    <span class="t-cap btn-shape bg-blue c-white f-14">in porgress</span>
+                  </td>
+                </tr>
+                <tr class="t-cap tran-04">
+                  <td class="p-15">bouba app</td>
+                  <td class="p-15">05 sep 2021</td>
+                  <td class="p-15">bouba</td>
+                  <td class="p-15">$800</td>
+                  <td class="d-flex align-center p-15">
+                    <img src="./content/images/team-01.png" alt="" class="rad-circle" />
+                    <img src="./content/images/team-02.png" alt="" class="rad-circle" />
+                  </td>
+                  <td class="p-15">
+                    <span class="t-cap btn-shape bg-green c-white f-14">completed</span>
+                  </td>
+                </tr>
+                <tr class="t-cap tran-04">
+                  <td class="p-15">mahmoud website</td>
+                  <td class="p-15">22 may 2021</td>
+                  <td class="p-15">mahmoud</td>
+                  <td class="p-15">$600</td>
+                  <td class="d-flex align-center p-15">
+                    <img src="./content/images/team-01.png" alt="" class="rad-circle" />
+                    <img src="./content/images/team-02.png" alt="" class="rad-circle" />
+                  </td>
+                  <td class="p-15">
+                    <span class="t-cap btn-shape bg-green c-white f-14">completed</span>
+                  </td>
+                </tr>
+                <tr class="t-cap tran-04">
+                  <td class="p-15">abdallah website</td>
+                  <td class="p-15">24 may 2025</td>
+                  <td class="p-15">abdallah</td>
+                  <td class="p-15">$300</td>
+                  <td class="d-flex align-center p-15">
+                    <img src="./content/images/team-01.png" alt="" class="rad-circle" />
+                    <img src="./content/images/team-02.png" alt="" class="rad-circle" />
+                  </td>
+                  <td class="p-15">
+                    <span class="t-cap btn-shape bg-red c-white f-14">rejected</span>
+                  </td>
+                </tr>
+                <tr class="t-cap tran-04">
+                  <td class="p-15">arena application</td>
+                  <td class="p-15">01 mar 2022</td>
+                  <td class="p-15">arena company</td>
+                  <td class="p-15">$2600</td>
+                  <td class="d-flex align-center p-15">
+                    <img src="./content/images/team-01.png" alt="" class="rad-circle" />
+                    <img src="./content/images/team-02.png" alt="" class="rad-circle" />
+                    <img src="./content/images/team-03.png" alt="" class="rad-circle" />
+                    <img src="./content/images/team-04.png" alt="" class="rad-circle" />
+                  </td>
+                  <td class="p-15">
+                    <span class="t-cap btn-shape bg-green c-white f-14">completed</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
+        <!-- Ending Of Projects Markup -->
       </main>
     </div>
   </body>
