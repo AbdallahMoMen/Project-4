@@ -837,6 +837,98 @@ h2::after {
 
 /* Ending Of Porjects Box Stylling */
 
+/* Starting Of Plans Page Stylling */
+
+.plans-page {
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .plans-page {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-inline: 10px;
+  }
+}
+
+/* Starting Of Plans Stylling */
+
+.plans-page .plan .head {
+  border: 3px solid #FFF;
+  outline: 3px solid var(--green-color);
+}
+
+.plans-page .plan.basic .head {
+  outline-color: var(--blue-color);
+}
+
+.plans-page .plan.premium .head {
+  outline-color: var(--orange-color);
+}
+
+
+.plans-page .plan .head .price {
+  font-weight: 350;
+  font-size: 50px;
+}
+
+.plans-page .plan .head .price::before {
+  content: "$";
+  font-weight: 500;
+  font-size: 24px;
+  position: absolute;
+  transform: translate(-20px, -5px);
+  -webkit-transform: translate(-20px, -5px);
+  -moz-transform: translate(-20px, -5px);
+  -ms-transform: translate(-20px, -5px);
+  -o-transform: translate(-20px, -5px);
+}
+
+.plans-page .plan > ul li {
+  padding-inline-start: 30px;
+  font-size: 15px;
+}
+
+.plans-page .plan > ul li::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--green-color);
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.plans-page .plan > ul li.not::before {
+  content: "\f00d";
+  color: var(--red-color);
+}
+
+.plans-page .plan > ul li > i {
+  font-size: 9px;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.plans-page .plan > span {
+  cursor: pointer;
+}
+
+/* Ending Of Plans Stylling */
+
+/* Starting Of Porjects Box Stylling */
+
+/* Ending Of Plans Page Stylling */
+
+
+
 /* Ending Of Projects Stylling */
 
 @keyframes blink-blue {
