@@ -94,8 +94,206 @@
 
         <!-- Starting Of Page Content Markup -->
 
-        <div class="wrapper gap-20 m-20"></div>
-        <!-- Starting Of Page Content Markup -->
+        <div class="setting-page d-grid gap-20 m-20">
+          <div class="site-control t-cap bg-white rad-6 p-20">
+            <div class="head mbot-20">
+              <h2 class="m-0 mbot-10">site control</h2>
+              <span class="c-grey f-15">control the website if there is maintenance</span>
+            </div>
+            <div class="mb-20">
+              <p>website control</p>
+              <div class="between-flex align-center">
+                <span class="d-block mtop-10 c-grey f-14"
+                  >open/close website and type the reason</span
+                >
+                <input type="checkbox" class="toggle p-relative tran-04" />
+              </div>
+            </div>
+            <textarea
+              name=""
+              id=""
+              placeholder="Close Message Content"
+              class="rad-6 p-10"
+            ></textarea>
+          </div>
+          <div class="general-info t-cap bg-white rad-6 p-20">
+            <div class="head mbot-20">
+              <h2 class="m-0 mbot-10">general info</h2>
+              <span class="c-grey f-15">general information about your account</span>
+            </div>
+            <form action="">
+              <div class="mbot-20">
+                <label for="f-name" class="d-block mbot-10 t-cap c-grey f-15">first name</label>
+                <input
+                  type="text"
+                  id="f-name"
+                  placeholder="First Name"
+                  class="w-full p-10 f-14 rad-6"
+                />
+              </div>
+              <div class="mbot-20">
+                <label for="l-name" class="d-block mbot-10 t-cap c-grey f-15">last name</label>
+                <input
+                  type="text"
+                  id="l-name"
+                  placeholder="Last Name"
+                  class="w-full p-10 f-14 rad-6"
+                />
+              </div>
+              <div>
+                <label for="mail" class="d-block mbot-10 t-cap c-grey f-15">email</label>
+                <div class="between-flex align-center gap-5">
+                  <input
+                    type="email"
+                    id="mail"
+                    value="Adrenalin@gmail.com"
+                    disabled
+                    class="p-10 rad-6 f-14 bg-dark w-full"
+                  />
+                  <a href="#" class="btn-shape c-blue f-18">change</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="security-info t-cap bg-white rad-6 p-20">
+            <div class="head mbot-20">
+              <h2 class="m-0 mbot-10">security info</h2>
+              <span class="c-grey f-15">security information about your account</span>
+            </div>
+            <div class="pass between-flex align-center pbot-20 b-bot">
+              <div>
+                password
+                <span class="d-block f-14 c-grey mtop-10">last change on 25/10/2022 </span>
+              </div>
+              <a href="#" class="pb-5 pi-10 rad-6 c-white bg-blue">change</a>
+            </div>
+            <div class="two-factor between-flex align-center pb-20 b-bot">
+              <div>
+                two-factor authentication
+                <span class="d-block f-14 c-grey mtop-10">enable/disable the feature</span>
+              </div>
+              <input type="checkbox" class="toggle p-relative tran-04" />
+            </div>
+            <div class="devices between-flex align-center pb-20">
+              <div>
+                devices
+                <span class="d-block f-14 c-grey mtop-10">check the login devices list</span>
+              </div>
+              <a href="#" class="btn-shape bg-dark">devices</a>
+            </div>
+          </div>
+          <div class="social-info t-cap bg-white rad-6 p-20">
+            <div class="head mbot-20">
+              <h2 class="m-0 mbot-10">social info</h2>
+              <span class="c-grey f-15">social media information</span>
+            </div>
+            <div class="d-flex align-center mbot-15 rad-6">
+              <i class="fa-brands fa-twitter center-flex c-grey bg-dark tran-04"></i>
+              <input
+                type="text"
+                id=""
+                placeholder="Twitter Username"
+                class="d-block w-full p-10 b-none bg-dark f-14"
+              />
+            </div>
+            <div class="d-flex align-center mbot-15 rad-6">
+              <i class="fa-brands fa-facebook-f center-flex c-grey bg-dark tran-04"></i>
+              <input
+                type="text"
+                id=""
+                placeholder="Facebook Username"
+                class="d-block w-full p-10 b-none bg-dark f-14"
+              />
+            </div>
+            <div class="d-flex align-center mbot-15 rad-6">
+              <i class="fa-brands fa-linkedin center-flex c-grey bg-dark tran-04"></i>
+              <input
+                type="text"
+                id=""
+                placeholder="Linkedin Username"
+                class="d-block w-full p-10 b-none bg-dark f-14"
+              />
+            </div>
+            <div class="d-flex align-center mbot-15 rad-6">
+              <i class="fa-brands fa-youtube center-flex c-grey bg-dark tran-04"></i>
+              <input
+                type="text"
+                id=""
+                placeholder="Youtube Username"
+                class="d-block w-full p-10 b-none bg-dark f-14"
+              />
+            </div>
+          </div>
+          <div class="widgets-control bg-white p-20 rad-6 t-cap">
+            <div class="head mbot-20">
+              <h2 class="m-0 mbot-10">widgets control</h2>
+              <span class="c-grey f-15">show/hide widgets</span>
+            </div>
+            <div class="mbot-15">
+              <input type="checkbox" id="one" checked />
+              <label for="one" class="p-relative">quick draft</label>
+            </div>
+            <div class="mbot-15">
+              <input type="checkbox" id="two" checked />
+              <label for="two" class="p-relative">yearly targets</label>
+            </div>
+            <div class="mbot-15">
+              <input type="checkbox" id="three" checked />
+              <label for="three" class="p-relative">tickets statistics</label>
+            </div>
+            <div class="mbot-15">
+              <input type="checkbox" id="four" checked />
+              <label for="four" class="p-relative">latest news</label>
+            </div>
+            <div class="mbot-15">
+              <input type="checkbox" id="five" />
+              <label for="five" class="p-relative">latest tasks</label>
+            </div>
+            <div class="mbot-15">
+              <input type="checkbox" id="six" checked />
+              <label for="six" class="p-relative">top search items</label>
+            </div>
+          </div>
+          <div class="backup-manager bg-white p-20 rad-6 t-cap">
+            <div class="head mbot-20">
+              <h2 class="m-0 mbot-10">backup manager</h2>
+              <span class="c-grey f-15">control backup time and location</span>
+            </div>
+            <div class="back-sub b-bot pbot-10">
+              <div class="pbot-10">
+                <input type="radio" name="back" id="back-one" checked />
+                <label for="back-one" class="p-relative">daily</label>
+              </div>
+              <div class="pbot-10">
+                <input type="radio" name="back" id="back-two" />
+                <label for="back-two" class="p-relative">weekly</label>
+              </div>
+              <div class="pbot-10">
+                <input type="radio" name="back" id="back-three" />
+                <label for="back-three" class="p-relative">monthly</label>
+              </div>
+            </div>
+            <div class="back-type d-flex align-center gap-10 t-center pb-20">
+              <input type="radio" name="choice" id="megaman" />
+              <label for="megaman" class="d-block pb-15 pi-20 tran-04 rad-6 w-full">
+                <i class="fa-solid fa-server d-block mbot-10"></i>
+                megaman
+              </label>
+              <input type="radio" name="choice" id="zero" checked />
+              <label for="zero" class="d-block pb-15 pi-20 tran-04 rad-6 w-full">
+                <i class="fa-solid fa-server d-block mbot-10"></i>
+                zero
+              </label>
+              <input type="radio" name="choice" id="sigma" />
+              <label for="sigma" class="d-block pb-15 pi-20 tran-04 rad-6 w-full">
+                <i class="fa-solid fa-server d-block mbot-10"></i>
+                sigma
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ending Of Page Content Markup -->
       </main>
     </div>
   </body>
