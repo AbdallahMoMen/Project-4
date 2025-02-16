@@ -267,8 +267,8 @@ main > h2::after {
   left: 0;
 }
 
-h2::after {
-  width: 20%;
+main > h2::after {
+  width: 35%;
   background-color: #000;
 }
 
@@ -687,7 +687,7 @@ h2::after {
 
 /* Ending Of Social Media Stylling */
 
-/* Starting Of Projects Stylling */
+/* Starting Of Projects Table Stylling */
 
 .projects .resp-table {
   overflow-x: auto;
@@ -731,9 +731,9 @@ h2::after {
 }
 
 
-/* Ending Of Projects Stylling */
+/* Ending Of Projects Table Stylling */
 
-/* Starting Of Projects Stylling */
+/* Starting Of Projects Page Stylling */
 .projects-page {
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
@@ -836,6 +836,80 @@ h2::after {
 }
 
 /* Ending Of Porjects Box Stylling */
+
+/* Ending Of Projects Page Stylling */
+
+/* Starting Of Friends Page Stylling */
+
+.friends-page {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .friends-page {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-inline: 10px;
+  }
+}
+
+.friends-page .friend .icons > i {
+  width: 30px;
+  height: 30px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.friends-page .friend .icons > i:hover {
+  background-color: var(--blue-color);
+  color: #FFF;
+}
+
+.friends-page .friend .image > img {
+  width: 100px;
+  height: 100px;
+}
+
+.friends-page .friend .friend-stats .vip {
+  font-size: 40px;
+  opacity: 0.3;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.friends-page .friend .friend-stats ul li {
+  padding-inline-start: 30px;
+}
+
+.friends-page .friend .friend-stats ul li::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f118";
+  font-weight: 300;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.friends-page .friend .friend-stats ul li.code::before {
+  content: "\f386";
+  font-weight: bold;
+}
+
+.friends-page .friend .friend-stats ul li.phone::before {
+  content: "\f1ea";
+  font-weight: bold;
+}
+
+/* Ending Of friends Page Stylling */
 
 /* Starting Of Files Page Stylling */
 
@@ -1015,13 +1089,7 @@ h2::after {
 
 /* Ending Of Plans Stylling */
 
-/* Starting Of Porjects Box Stylling */
-
 /* Ending Of Plans Page Stylling */
-
-
-
-/* Ending Of Projects Stylling */
 
 @keyframes blink-blue {
   30% {
