@@ -256,8 +256,8 @@ main > h2 {
   margin: 20px 20px 40px;
 }
 
-h2::before,
-h2::after {
+main > h2::before,
+main > h2::after {
   content: "";
   width: 80%;
   height: 4px;
@@ -837,6 +837,98 @@ h2::after {
 
 /* Ending Of Porjects Box Stylling */
 
+/* Starting Of Files Page Stylling */
+
+.files-page {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.files-stats {
+  min-width: 260px;
+}
+
+@media (max-width: 767px) {
+  .files-page {
+    flex-direction: column;
+    align-items: normal;
+    margin-inline: 10px;
+  }
+
+  .files-stats {
+    min-width: 220px;
+  }
+}
+
+/* Starting Of Files Statis Stylling */
+
+.files-stats > div:not(:last-child) {
+  border: 1px solid var(--dark-color);
+}
+
+.files-stats > div:not(:last-child) > i {
+  width: 40px;
+  height: 40px;
+  background-color: #cce3ff;
+}
+
+.files-stats > div:nth-of-type(2) > i {
+  background-color: #d3f3df;
+}
+
+.files-stats > div:nth-of-type(3) > i {
+  background-color: #fdd9d7;
+}
+
+.files-stats > div:nth-of-type(4) > i {
+  background-color: #fdecce;
+}
+
+.files-stats > div:last-child {
+  margin-inline: auto;
+  cursor: pointer;
+}
+
+.files-stats > div:last-child:hover {
+  background-color: var(--blue-alt-color);
+}
+
+.files-stats > div:last-child:hover > i {
+  animation: up-down 0.8s infinite;
+  -webkit-animation: up-down 0.8s infinite;
+}
+
+/* Ending Of Files Statis Stylling */
+
+/* Starting Of File Stylling */
+
+.files-page .content {
+  flex: 1;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.files-page .content .file > i {
+  top: 10px;
+  left: 10px;
+}
+
+.files-page .content .file .icon img {
+  width: 70px;
+}
+
+.files-page .content .file:hover .icon img {
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+}
+
+/* Ending Of File Stylling */
+
+
+/* Ending Of Files Page Stylling */
+
 /* Starting Of Plans Page Stylling */
 
 .plans-page {
@@ -938,5 +1030,24 @@ h2::after {
 
   70% {
     background-color: var(--blue-color);
+  }
+}
+
+@keyframes up-down {
+  50% {
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+  }
+
+  0%,
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
   }
 }
