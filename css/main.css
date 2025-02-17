@@ -754,7 +754,6 @@ main > h2::after {
   }
 }
 
-
 /* Starting Of Site Control Stylling */
 
 input.toggle[type="checkbox"] {
@@ -1013,6 +1012,127 @@ input.toggle[type="checkbox"]:checked::before {
 
 /* Ending Of Settings Page Stylling */
 
+/* Starting Of Profile Page Stylling */
+
+.profile-page .profile-stats {
+  min-width: 200px;
+  padding-inline: 30px;
+  border-inline-end: 1px solid var(--dark-color);
+}
+
+@media (max-width: 767px) {
+  .profile-page {
+    margin: 10px;
+  }
+
+  .profile-page .profile {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .profile-page .profile .profile-stats {
+    border: none;
+    padding: 20px 0;
+  }
+
+  .profile-page .profile-info > div {
+    padding-inline: 0;
+  }
+}
+
+.profile-page .profile-stats img {
+  width: 120px;
+  height: 120px;
+}
+
+.profile-page .profile-stats .bar {
+  width: 80%;
+  height: 6px;
+  margin-inline-start: 10%;
+}
+
+.profile-page .profile-info .info-container {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .profile-page .profile-info .info-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+.profile-page .profile-stats .bar::after {
+  content: "";
+  width: 70%;
+  height: 100%;
+  background-color: var(--blue-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.profile-page .profile-info > div:hover {
+  background-color: var(--dark-color);
+}
+
+.profile-page input.toggle[type="checkbox"] {
+  min-width: 78px;
+  height: 20px;
+}
+
+.profile-page input.toggle[type="checkbox"]::before {
+  font-size: 10px;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 3px;
+  top: 50%;
+}
+
+.profile-page input.toggle[type="checkbox"]:checked::before {
+  left: 60px;
+}
+
+.profile-page .activities {
+  flex: 2;
+}
+
+@media (max-width: 767px) {
+
+  .profile-page .content,
+  .profile-page .content .activities .activity,
+  .profile-page .content .activities .activity .info > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .profile-page .skills,
+  .profile-page .activities {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-page .content div > div:not(:first-child) {
+    justify-content: center;
+  }
+}
+
+.profile-page .activities img {
+  width: 64px;
+  height: 64px;
+}
+
+
+
+/* Ending Of Profile Page Stylling */
+
 /* Starting Of Projects Page Stylling */
 
 .projects-page {
@@ -1182,6 +1302,15 @@ input.toggle[type="checkbox"]:checked::before {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     margin-inline: 10px;
   }
+}
+
+.friends-page .friend {
+  padding-block-start: 30px;
+}
+
+.friends-page .friend .icons {
+  left: 10px;
+  top: 10px;
 }
 
 .friends-page .friend .icons > i {
